@@ -1,0 +1,98 @@
+\documentclass[paper=a4, english, ngerman]{scrartcl}
+
+\usepackage[a4paper,left=2cm,right=2cm,top=2.5cm,bottom=3cm]{geometry}
+\usepackage[ngerman]{babel}
+\usepackage{tabularx}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+%\usepackage{hyperref}
+\usepackage{url}
+
+\parindent 0pt
+\lstset{basicstyle={\linespread{0.3}\ttfamily\scriptsize}, tabsize=2, basewidth=1.3mm, language=java,
+	literate=%
+    {Ö}{{\"O}}1
+    {Ä}{{\"A}}1
+    {Ü}{{\"U}}1
+    {ß}{{\ss}}1
+    {ü}{{\"u}}1
+    {ä}{{\"a}}1
+    {ö}{{\"o}}1
+    {~}{{\textasciitilde}}1
+}
+
+\begin{document}
+	\begin{tabular}{p{8.5cm}ll}
+		\multirow{2}{*}{\huge{Softwaretechnik - Übung 1} } & Bearbeiter: &  Dor Cohen, Mihai Renea \\
+		                                 & Tutorium:   & Alexander K., Do. 10 Uhr         \\ \hline
+	\end{tabular}
+	
+\stepcounter{section}
+\section{Aufgabe 1 Logik und diskrete Mathematik}
+
+	\begin{enumerate}[label=\alph*)]
+		\item Boolscher Ausdruck ist die explizite Beschreibung einer boolschen Funktion mit boolschen Operatoren.
+		\item \begin{itemize}
+			\item Qualität: Steuerungssystem eines Flugzeuges.
+			\item Großer Umfang: CAD
+			\item Zeitaufwand: Social-Media-App
+			\item Kosten: E-Learning Plattform für arme Länder
+		\end{itemize}
+		
+		\item \neg (\forall i\in N : (i > 5) \Rightarrow (\exists j \in N : j+i > 100) ) \Longleftrightarrow
+		\exists i \in N : (i>5) \Rightarrow (\forall j \in N : j+i <= 100)
+		
+		
+	\end{enumerate}
+
+\section{Zu viel Milch}
+
+\begin{enumerate}[label=\alph*)]
+	\item \begin{itemize}
+		\item Erstes Verfahren: Eine Notize auf dem Kühlschrank zu hinterlassen.
+		
+		Korrektheit: mit diesem Verfahren weisst man immer, wenn die andere Person zum Einkaufen ging.
+		
+		\item Zweites Verfahren: Genau einen Pfaden zum Laden vereinbaren.
+		
+		Korrektheit: mit diesem Verfahren, trifft man sich mit der anderen Person, falls sie beide zum Einkaufen gingen.
+		
+		
+		\item Attribut: Variable in einer Klasse.
+		
+		\item Operation: beschreibt, was eine Funktion einer Klasse tun soll.
+		
+		\item Methode: die Umsetzung einer Operation in Abhängigkeit von der Unterklasse.
+		
+		\item Exemplar: die Konkretisierung einer Klasse.
+		
+		\item Objekt: Exemplar, aber nicht in direktem Bezug auf einer bestimmt Klasse.
+		
+		\item Bibliothek: eine Zusammenstellung von Programmierwerkzeuge, die für eine bestimmte Aufgabe gezielt ist.
+		
+		\item Spezifikation: die Beschreibung einer Programmierschnittstelle.
+		
+		\item Implementierung: die Umsetzung einer Spezifikation.
+		
+		\item Verifikation: damit wird Überprüft, ob ein Software die Spezifikationen trifft. \footnote{\url{https://de.wikipedia.org/wiki/Verifizierung#Informatik_(Verifizieren_von_Software)}}
+		
+		\item Geheimnisprinzip: die Software wird in Abschnitten unterteilt, die ausschließlich über klar definierte Schnittstellen miteinander kommunizieren.
+	\end{itemize}
+	
+	\item Eine Klasse ist wie ein \textit{blueprint} für die Erzeugung eines Objektes.
+	Eine Menge an Objekten ist eine Sammlung an Exemplare, die einer oder mehreren Klassen gehören.
+	
+	\item Inbetriebnahme, Management.
+\end{enumerate}
+		
+
+\end{document}
