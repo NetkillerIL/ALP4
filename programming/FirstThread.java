@@ -2,10 +2,12 @@ import java.util.Random;
 
 // define run method in a Runnable class which will be loaded into a Thread 
 public class FirstThread implements Runnable {
+	// creates a random time for each Thread
 	Random rand = new Random();
 	int  rndTime = rand.nextInt(5) + 1;	
 
     public void run() {
+    	// gets current thread id
     	long threadId = Thread.currentThread().getId();
     	while (true) {
 	        System.out.print("Hello from thread ");
